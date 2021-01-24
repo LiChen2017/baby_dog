@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Template Inherit</title>
+</head>
+<body>
+<h1>GET IN BASE TEMPLATE</h1>
+
+<div class="container-fluid">
+    {{block "part1" .}}{{end}}
+</div>
+
+<div>
+    {{block "part2" .}}{{end}}
+</div>
+
+<div>
+    {{block "part3" .}}{{end}}
+</div>
+
+<div>
+    {{block "part4" .}}{{end}}
+</div>
+
+<div>
+    {{block "content" .}}{{end}}
+</div>
+
+<h1>GET OUT BASE TEMPLATE</h1>
+</body>
+</html>

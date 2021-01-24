@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEST_TEMPLATE</title>
+</head>
+<body>
+    <p>PERSON ONE</p>
+    {{with .person1}}
+    <p>Hello {{.Name}} !</p>
+    <p>{{.Gender}}</p>
+    <p>{{.Age}}</p>
+    {{end}}
+
+    <p>PERSON TWO</p>
+    <p>Hello {{.person2.name}} !</p>
+    <p>{{.person2.gender}}</p>
+    <p>{{.person2.age}}</p>
+
+    <hr>
+    {{$ver:="Version 2021-1-24"}}
+    {{if lt .person1.Age 10}}
+    {{$ver}}
+    {{else}}
+    no version
+    {{end}}
+    </hr>
+
+    <hr>
+    {{range $idx, $val := .}}
+    <p>{{$idx}} - {{$val}}</p>
+    {{end}}
+
+    {{range $idx, $val := .numbers}}
+    <p>{{$idx}} - {{$val}}</p>
+    {{end}}
+
+    {{index .numbers 2}}
+
+    </hr>
+</body>
+</html>

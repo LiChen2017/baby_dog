@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEST_TEMPLATE</title>
+</head>
+<body>
+<h1>TEST NEST TEMPLATE {{.}}</h1>
+{{template "base1.tmpl"}}
+{{template "base2.tmpl"}}
+</body>
+</html>
+
+{{define "base2.tmpl"}}
+<base2>
+    <hr>
+    <p> Hello, this is base2 template </p>
+    <p2> pang pang </p2>
+    <p2> nao nao </p2>
+    <p2> zai zai </p2>
+    </hr>
+</base2>
+{{end}}

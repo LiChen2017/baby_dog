@@ -1,0 +1,13 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /middle                   --> main.main.func7 (2 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- tmp.html
+
+[GIN-debug] GET    /template                 --> main.main.func8 (2 handlers)
+[GIN-debug] GET    /certificate              --> main.main.func9 (2 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
