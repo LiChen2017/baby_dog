@@ -1,0 +1,13 @@
+{{define "posts/index.tmpl"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIN_TEMPLATE_POSTS</title>
+</head>
+
+<body>
+    <div>Hello {{.NAME}}</div>
+    <div>{{.address | safe}}</div>
+</body>
+<html>
+{{end}}

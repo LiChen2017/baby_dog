@@ -1,0 +1,13 @@
+{{define "users/index.tmpl"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIN_TEMPLATE_USERS</title>
+</head>
+
+<body>
+    <div>Hello {{.NAME}}</div>
+    <div>{{.address | safe}}</div>
+</body>
+<html>
+{{end}}
